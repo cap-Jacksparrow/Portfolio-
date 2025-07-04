@@ -141,7 +141,7 @@ font-size:2rem;left:10%}
     justify-content: center;
     flex-wrap: wrap;
     font-size: 1.3em;
-    overflow-y: visible;
+    overflow:hidden;
     padding:5%;
     gap:5%;
 }
@@ -304,6 +304,7 @@ font-size:2rem;left:10%}
     position:relative;
     grid-template-columns: 1fr 1fr;
     gap:30px ;
+    overflow-y: visible;
    
   }
   .E-com img{
@@ -322,6 +323,7 @@ font-size:2rem;left:10%}
     grid-template-columns: 1fr 1fr;
     position:relative;
     gap:30px;
+    overflow-y: visible;
    
   }
   
