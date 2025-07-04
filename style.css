@@ -83,7 +83,7 @@ left: -4rem;
 top: -14rem;
 height:18rem;
 width:15rem; 
-background-image: url("/img/he-image.png");
+background-image: url("./img/he-image.png");
 background-position: center;
 background-size:contain;
 background-repeat: no-repeat;
