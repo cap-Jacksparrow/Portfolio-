@@ -43,33 +43,46 @@ AOS.init({
 
  
 
+let activeBox = null;
+
 document.querySelectorAll('.image-box').forEach(box => {
   box.addEventListener('click', () => {
-    // Remove 'touched' class from all boxes
-    document.querySelectorAll('.image-box').forEach(b => {
-      if (b !== box) {
-      b.classList.remove('touched');
-      b.style.setProperty('transform', 'translate(0, 0) scale(1)'); // Reset transform for other boxes
+    // If clicking again on the same box
+    if (activeBox === box) {
+      box.classList.toggle('touched');
+      if (!box.classList.contains('touched')) {
+        box.style.transform = 'translate(0, 0) scale(1)';
+        activeBox = null;
       }
+      return;
+    }
+    
+    // Reset other boxes
+    document.querySelectorAll('.image-box').forEach(b => {
+      b.classList.remove('touched');
+      b.style.transform = 'translate(0, 0) scale(1)';
     });
-    // // Add 'touched' to clicked
-    box.classList.toggle('touched');
-   const rect= box.getBoundingClientRect();
-    const centerx= rect.left + rect.width / 2;
-    const centery= rect.top + rect.height / 2;
-    const offsetX = window.innerWidth / 2 - centerx;
-    const offsetY = window.innerHeight / 2 - centery;
-    box.style.setProperty('transform', `translate(${offsetX}px, ${offsetY}px) scale(2)`);
-    if(!box.classList.contains('touched')){
-     box.style.transform=`translate(0, 0) scale(1)`;
-    }
+
+    // Activate the clicked box
+    box.classList.add('touched');
+    const rect = box.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const offsetX = window.innerWidth / 2 - centerX;
+    const offsetY = window.innerHeight / 2 - centerY;
+    box.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
+    
+    activeBox = box;
   });
-  document.addEventListener('click', (e) => {
-    if (!box.contains(e.target)) {
-       box.style.transform=`translate(0, 0) scale(1)`;
-      box.classList.remove('touched');
-    }
-  });
+});
+
+// add only ONE global click handler
+document.addEventListener('click', e => {
+  if (activeBox && !activeBox.contains(e.target)) {
+    activeBox.style.transform = 'translate(0, 0) scale(1)';
+    activeBox.classList.remove('touched');
+    activeBox = null;
+  }
 });
 
 document.querySelectorAll('.form-item input, .form-item textarea').forEach(input => {
