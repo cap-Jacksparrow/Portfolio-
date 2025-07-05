@@ -48,7 +48,7 @@ a{
     color:white;
     padding:0;
     max-width:100%;
-    overflow:hidden;
+    overflow:visible;
 }
 .hero-container{
     display:flex;
