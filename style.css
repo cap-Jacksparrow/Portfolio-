@@ -304,7 +304,7 @@ font-size:2rem;left:10%}
     position:relative;
     grid-template-columns: 1fr 1fr;
     gap:30px ;
-    overflow-y: visible ! important;
+    overflow: visible;
    
   }
   .E-com img{
