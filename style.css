@@ -48,6 +48,7 @@ a{
     color:white;
     padding:0;
     max-width:100%;
+   overflow-x: hidden;
     overflow-y:visible;
 }
 .hero-container{
@@ -537,7 +538,7 @@ font-size:2rem;left:10%}
       left: 80%;                 
       top:35%;  
     }
-    .menu-toggle{
+    .menu-toggle svg{
       width:200px !important;               
       height:200px !important;
     }
