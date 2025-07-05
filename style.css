@@ -225,7 +225,7 @@ font-size:2rem;left:10%}
   .line{ 
     position:absolute;
     width: 2px;
-    top:14%;
+    top:16%;
     flex-grow: 1;
     transform-origin: top;
     transform: scaleY(0);
@@ -248,7 +248,7 @@ font-size:2rem;left:10%}
     height:2px;
     position: absolute;
     background-color: aliceblue;
-    top: 74%;
+    top: 76%;
     left:50%;
     transform: scaleX(0);
     transform-origin: left;
@@ -348,7 +348,7 @@ font-size:2rem;left:10%}
     color:white;
     background-color: rgba(109, 107, 107, 0.7);
     transition: opacity 0.3s ease;
-    z-index:2;
+    z-index:12;
     width:30%;
     height: 10%;
     border-radius: 10%;
@@ -361,11 +361,11 @@ font-size:2rem;left:10%}
     transform: translate(0,0) scale(1) ;
   }
  .image-box.touched .portfolio-info{
-    opacity:999;
+    opacity:1;
   }
   .image-box.touched{
     position: fixed;
-    z-index: 999;
+    z-index: 10;
     transform: var(--transform,none);
     box-shadow: 0 0 80px rgba(53, 0, 245, 0.8);
     transform-origin: center center;
