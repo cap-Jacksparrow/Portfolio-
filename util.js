@@ -71,7 +71,6 @@ document.querySelectorAll('.image-box').forEach(box => {
     const offsetX = window.innerWidth / 2 - centerX;
     const offsetY = window.innerHeight / 2 - centerY;
     box.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(2)`;
-    box.style.overflow='visible';
     box.style.Zindex='99';
     activeBox = box;
   });
