@@ -55,6 +55,7 @@ a{
     display:flex;
     position:relative;
     padding-top:18%;
+    height:100vh;
     
 }
 .hero-message{
