@@ -4,8 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y:visible;
+    overflow: auto;
     background-color: black;
     font-family: "Times New Roman", Times, serif;
 }
@@ -49,6 +48,7 @@ a{
     color:white;
     padding:0;
     max-width:100%;
+    overflow-x:clip;
  
 }
 .hero-container{
