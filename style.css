@@ -49,6 +49,7 @@ a{
     padding:0;
     max-width:100%;
     overflow-y:visible;
+    overflow-x: hidden;
 }
 .hero-container{
     display:flex;
@@ -534,9 +535,7 @@ font-size:2rem;left:10%}
     .menu-toggle{
       display:block;
       position: absolute;
-      left: 80%;
-      width:200px !important;               
-      height:200px !important;                 
+      left: 80%;                
       top:35%;  
     }
     .nav-menu.active {
@@ -636,8 +635,6 @@ font-size:2rem;left:10%}
     .menu-toggle{
       display:block;
       position: absolute;
-      width:15rem;
-      height:15rem;
       top:32%;          
       left:80%;
     }
