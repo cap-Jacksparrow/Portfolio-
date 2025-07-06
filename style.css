@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y:visible;
     background-color: black;
     font-family: "Times New Roman", Times, serif;
 }
@@ -211,21 +212,18 @@ font-size:2rem;left:10%}
   top: 50%;
   left: 20%;
 }
- .svgdiv{
-    position: absolute;
-    top: 5%;
-    left: 45%;
- }
- .svgdiv svg{
-  width:34%;
-  height:34%;
+.acadsvg{
+  position: absolute;
+  width:7rem;
+  height: 7rem;
+  top:0;
+  z-index: 10;
  }
 
   .line{ 
     position:absolute;
     width: 2px;
-    top:16%;
-    flex-grow: 1;
+    top:10%;
     transform-origin: top;
     transform: scaleY(0);
     background-color: aliceblue;
@@ -247,7 +245,7 @@ font-size:2rem;left:10%}
     height:2px;
     position: absolute;
     background-color: aliceblue;
-    top: 76%;
+    top: 70%;
     left:50%;
     transform: scaleX(0);
     transform-origin: left;
