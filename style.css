@@ -527,7 +527,9 @@ font-size:2rem;left:10%}
     .navbar-container {
       width: 95%;
       height:10%;
+      margin-left:0px;
     }
+    
     .nav-menu {
       display: none;
     }
