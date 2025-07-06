@@ -215,12 +215,10 @@ font-size:2rem;left:10%}
     position: absolute;
     top: 5%;
     left: 45%;
-    width:100%;
-    height:100%;
  }
- .svgdiv circle,svg{
-  width:12%;
-  height: 12%;
+ .svgdiv svg{
+  width:34%;
+  height:34%;
  }
 
   .line{ 
