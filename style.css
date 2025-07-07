@@ -223,7 +223,7 @@ font-size:2rem;left:10%}
   .line{ 
     position:absolute;
     width: 2px;
-    top:10%;
+    top:9%;
     transform-origin: top;
     transform: scaleY(0);
     background-color: aliceblue;
@@ -245,7 +245,7 @@ font-size:2rem;left:10%}
     height:2px;
     position: absolute;
     background-color: aliceblue;
-    top: 70%;
+    top: 69%;
     left:50%;
     transform: scaleX(0);
     transform-origin: left;
