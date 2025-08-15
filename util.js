@@ -139,4 +139,20 @@ document.querySelector('.menu-toggle').addEventListener('click', () => {
     const navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('active');}
 );
-  
+const imageBlock=document.querySelectorAll('.more-images')
+imageBlock.forEach((elem)=>{
+  let key=true
+elem.addEventListener('click',(e)=>{
+            const parent=e.target.parentNode
+            const children=Array.from(parent.children).slice(4)
+            for(let i=0;i<children.length-1;i++)
+            children[i].classList.toggle('show-hide')
+            if(key)
+              e.target.textContent='see less'
+            else
+              e.target.textContent='see more'
+            key=!key
+            })
+
+})
+
